@@ -4,6 +4,33 @@
     </head>
 <body>
     <h1>Welcome to this demo</h1>
+    <script>
+        function displayDate(){
+            document.getElementById('show_date').innerHTML=Date();
+    }
+
+
+        function showCurrent(){
+            value = document.getElementById("show_date").innerHTML;
+            var x = new theObject;
+            x.say();
+            console.log('see you console ...');
+        }
+    
+        var theObject = new Object;
+        theObject.say = function(){
+            alert("Hello, I am Object method");
+        };
+    
+    
+ </script>
+    
+    <p id="show_date">A date will show here!</p>
+
+    <button type="button"  onclick="displayDate();">Show Date</button>
+    <button type="button" onclick="showCurrent();">Show Current Context</button>
+    
+
 </body>
 </html>
  
